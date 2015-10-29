@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Grid Components</title>
+    <style type="text/css">
+        table {
+            border-radius: 10px;
+            border: 1px solid #9ba2a9;
+            border-collapse: collapse;
+            border-spacing: 0;
+            overflow: hidden;
+        }
+
+        th, td {
+            border: 1px solid #9ba2a9;
+            padding: 5px;
+            font-family: Verdana, sans-serif;
+            font-size: 12px;
+            font-weight: normal;
+        }
+
+        .funnel {
+            background-image: url("http://icons.iconarchive.com/icons/led24.de/led/16/funnel-icon.png");
+            height: 20px;
+            width: 20px;
+            border: 1px solid #b5eae2;
+        }
+
+        thead, tfoot {
+            background-color: #e6e8ea;
+            text-align: left;
+        }
+
+        #right {
+            text-align: right;
+        }
+
+        .noborder {
+            border: none;
+        }
+
+        a {
+            font-size: 12px;
+            word-spacing: 3px;
+        }
+
+        #text1 {
+            width: 30px;
+        }
+
+        #text3 {
+            width: 100px;
+        }
+
+        .col1 {
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="6">
+                    Drag a column header and drop it here to group that column
+                </th>
+            </tr>
+            <tr>
+                <th class="col1">Product ID</th>
+                <th class="col2">Product Name</th>
+                <th class="col3">Unit Price</th>
+                <th class="col4">Quantity Per Price</th>
+                <th class="col5">Unit In Stock</th>
+                <th class="col6">Discounted</th>
+            </tr>
+            <tr>
+                <th class="col1">
+                    <input type="text" id="text1">
+                </th>
+                <th class="col2">
+                    <input type="text" id="text2">
+                </th>
+                <th class="col3">
+                    <input type="text" id="text3">
+                    <input type="button" class="funnel">
+                </th>
+                <th class="col4">
+                    <input type="text" id="text4">
+                </th>
+                <th class="col5">
+                    <input type="text" id="text5">
+                    <input type="button" class="funnel">
+                </th>
+                <th class="col6">
+                    <input type="checkbox" value="discounted" />
+                    <input type="button" class="funnel">
+                </th>
+            </tr>
+        </thead>
+
+        <tfoot>
+            <tr>
+                <td colspan="2" class="noborder">
+                    <input type="button" id="first" value="« ">
+                    <input type="button" id="next" value="◄">
+                    <a href="">1</a>
+                    <a href="">2</a>
+                    <a href="">3</a>
+                    <a href="">4</a>
+                    <a href="">5</a>
+                    <a href="">6</a>
+                    <a href="">7</a>
+                    <a href="">8</a>
+                    <a href="">9</a>
+                    <a href="">10</a>
+                    ...
+                    <input type="button" id="prev" value=" ►">
+                    <input type="button" id="last" value="»">
+                </td>
+                <td class="noborder">
+                    <label for="pg">Page size:</label>
+                    <select name="pg">
+                        <option selected="selected">10</option>
+                        <option>20</option>
+                        <option>50</option>
+                    </select>
+                </td>
+                <td class="noborder"></td>
+                <td colspan="2" id="right" class="noborder">
+                    335104 items in 33511 pages
+                </td>
+            </tr>
+        </tfoot>
+
+        <tbody>
+            <tr>
+                <td class="col1">1</td>
+                <td class="col2">Tea</td>
+                <td class="col3">$18.00</td>
+                <td class="col4">10 boxes x20 bags</td>
+                <td class="col5">39</td>
+                <td class="col6">
+                    <input type="checkbox" value="discounted" />
+                </td>
+            </tr>
+            <tr>
+                <td class="col1">2</td>
+                <td class="col2">Chang</td>
+                <td class="col3">$19.00</td>
+                <td class="col4">24-12 oz bottles</td>
+                <td class="col5">17</td>
+                <td class="col6">
+                    <input type="checkbox" value="discounted" />
+                </td>
+            </tr>
+            <tr>
+                <td class="col1">3</td>
+                <td class="col2">Anise Syrup</td>
+                <td class="col3">$10.00</td>
+                <td class="col4">12-550 ml bottles</td>
+                <td class="col5">13</td>
+                <td class="col6">
+                    <input type="checkbox" value="discounted" />
+                </td>
+            </tr>
+            <tr>
+                <td class="col1">4</td>
+                <td class="col2">Chef Anton's Cajun Seasoning</td>
+                <td class="col3">$22.00</td>
+                <td class="col4">48-6 oz jars</td>
+                <td class="col5">53</td>
+                <td class="col6">
+                    <input type="checkbox" value="discounted" />
+                </td>
+            </tr>
+            <tr>
+                <td class="col1">5</td>
+                <td class="col2">Chef Anton's Gumbo mix</td>
+                <td class="col3"> $21.35</td>
+                <td class="col4">36 boxes</td>
+                <td class="col5">0</td>
+                <td class="col6">
+                    <input type="checkbox" checked="checked" value="discounted" />
+                </td>
+            </tr>
+            <tr>
+                <td class="col1">6</td>
+                <td class="col2">Grandma's Boysenberry Spread</td>
+                <td class="col3">$25.00</td>
+                <td class="col4"> 12-8 oz bars</td>
+                <td class="col5">120</td>
+                <td class="col6">
+                    <input type="checkbox" value="discounted" />
+                </td>
+            </tr>
+            <tr>
+                <td class="col1">7</td>
+                <td class="col2">Uncle Bob's Organic Dried Pears</td>
+                <td class="col3"> $30.00</td>
+                <td class="col4">12-1 lb pkgs </td>
+                <td class="col5">15</td>
+                <td class="col6">
+                    <input type="checkbox" value="discounted" />
+                </td>
+            </tr>
+            <tr>
+                <td class="col1">8</td>
+                <td class="col2">North woods Cranberry Sauce</td>
+                <td class="col3">$40.00</td>
+                <td class="col4">12-12 oz jars</td>
+                <td class="col5">6</td>
+                <td class="col6">
+                    <input type="checkbox" value="discounted" />
+                </td>
+            </tr>
+            <tr>
+                <td class="col1">9</td>
+                <td class="col2">Mishi Kobe Niku</td>
+                <td class="col3">$97.00</td>
+                <td class="col4">18-500 g pkgs</td>
+                <td class="col5">29</td>
+                <td class="col6">
+                    <input type="checkbox" checked="checked" value="discounted" />
+                </td>
+            </tr>
+            <tr>
+                <td class="col1">10</td>
+                <td class="col2">Ikura</td>
+                <td class="col3">$31.00</td>
+                <td class="col4">12-200 ml jars</td>
+                <td class="col5">31</td>
+                <td class="col6">
+                    <input type="checkbox" value="discounted" />
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

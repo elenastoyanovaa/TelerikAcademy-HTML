@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Problem 1-Table</title>
+    <style type="text/css">
+        table, td, tr {
+            text-align: center;
+            border: 1px solid grey;
+        }
+
+        .right {
+            text-align: right;
+            width: 20px;
+        }
+
+        #left {
+            text-align: left;
+        }
+
+        #j {
+            vertical-align: bottom;
+        }
+    </style>
+</head>
+<body>
+    <table cellpadding="5" cellspacing="2">
+        <tr>
+            <td colspan="3">Title goes here</td>
+            <td>A</td>
+            <td class="right">B</td>
+        </tr>
+        <tr>
+            <td rowspan="3" id="left">C</td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+            <td class="right">G</td>
+        </tr>
+
+        <tr>
+            <td>H</td>
+            <td colspan="2">I</td>
+            <td rowspan="2" id="j" class="right">J</td>
+        </tr>
+        <tr>
+            <td>K</td>
+            <td>L</td>
+            <td class="right">M</td>
+        </tr>
+        <tr>
+            <td class="right">N</td>
+            <td colspan="4">O</td>
+        </tr>
+    </table>
+</body>
+</html>

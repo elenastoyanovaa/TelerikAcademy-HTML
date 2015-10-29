@@ -1,0 +1,276 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Registration form</title>
+    <style type="text/css">
+        table {
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+
+        tbody .col1 {
+            text-align: center;
+            width: 170px;
+        }
+
+        thead, tfoot {
+            text-align: center;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        th, td, tr {
+            border: 1px solid grey;
+        }
+
+        th {
+            font-size: xx-large;
+        }
+
+        .input {
+            width: 300px;
+        }
+
+        .inputcity {
+            width: 200px;
+        }
+
+        .inputstate {
+            width: 50px;
+        }
+
+        .normal {
+            font-weight: normal;
+        }
+
+        .inputzip {
+            width: 80px;
+        }
+
+        .adress {
+            height: 50px;
+            width: 300px;
+        }
+
+        .number1 {
+            width: 40px;
+        }
+
+        .number2 {
+            width: 40px;
+        }
+
+        .number3 {
+            width: 70px;
+        }
+
+        .col2 {
+            width: 310px;
+        }
+
+        #com {
+            width: 300px;
+        }
+
+        tfoot {
+            background-color: #00ffff;
+        }
+    </style>
+</head>
+<body>
+    <form name="Registration" method="post">
+        <table>
+            <colgroup>
+                <col />
+                <col class="col2" />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th colspan="2">Registration form</th>
+                </tr>
+            </thead>
+
+            <tfoot>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Submit" />
+                        <input type="reset" name="resetbutton" value="Clean This Form" />
+                    </td>
+                </tr>
+            </tfoot>
+
+            <tbody>
+                <tr>
+                    <td class="col1">
+                        <label for="ln">Last name:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="ln" class="input" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col1">
+                        <label for="fn">First name:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="fn" class="input" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col1">
+                        <label for="address">Address:</label>
+                    </td>
+                    <td>
+                        <textarea rows="4" cols="45" id=" address" class="adress"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col1">
+                        <label for="city">City:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="city" class="inputcity" />
+
+                        <label for="state" class="normal">State</label>
+                        <input type="text" id="state" class="inputstate" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col1">
+                        <label for="zip">Zip/Postal code:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="zip" class="inputzip" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col1">
+                        <label for="country">Last name:</label>
+                    </td>
+                    <td>
+                        <select name="Country">
+                            <option value="Afghanistan">Afghanistan</option>
+                            <option value="Albania">Albania</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Austria">Austria</option>
+                            <option value="Azerbaijan">Azerbaijan</option>
+                            <option value="Bahamas">Bahamas</option>
+                            <option value="Belarus">Belarus</option>
+                            <option value="Belgium">Belgium</option>
+                            <option value="Bolivia">Bolivia</option>
+                            <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                            <option value="Bulgaria" selected="selected">Bulgaria</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Chile">Chile</option>
+                            <option value="China">China</option>
+                            <option value="Cyprus">Cyprus</option>
+                            <option value="Czech Republic">Czech Republic</option>
+                            <option value="Denmark">Denmark</option>
+                            <option value="Egypt">Egypt</option>
+                            <option value="Finland">Finland</option>
+                            <option value="France">France</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Ghana">Ghana</option>
+                            <option value="Guyana">Guyana</option>
+                            <option value="Haiti">Haiti</option>
+                            <option value="Hungary">Hungary</option>
+                            <option value="Iceland">Iceland</option>
+                            <option value="India">India</option>
+                            <option value="Indonesia">Indonesia</option>
+                            <option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option>
+                            <option value="Iraq">Iraq</option>
+                            <option value="Ireland">Ireland</option>
+                            <option value="Israel">Israel</option>
+                            <option value="Italy">Italy</option>
+                            <option value="Jamaica">Jamaica</option>
+                            <option value="Japan">Japan</option>
+                            <option value="Korea, Republic of">Korea, Republic of</option>
+                            <option value="Luxembourg">Luxembourg</option>
+                            <option value="Macao">Macao</option>
+                            <option value="Mexico">Mexico</option>
+                            <option value="Netherlands">Netherlands</option>
+                            <option value="Norway">Norway</option>
+                            <option value="Paraguay">Paraguay</option>
+                            <option value="Peru">Peru</option>
+                            <option value="Philippines">Philippines</option>
+                            <option value="Poland">Poland</option>
+                            <option value="Portugal">Portugal</option>
+                            <option value="Romania">Romania</option>
+                            <option value="Russian Federation">Russian Federation</option>
+                            <option value="Slovakia">Slovakia</option>
+                            <option value="Slovenia">Slovenia</option>
+                            <option value="Sweden">Sweden</option>
+                            <option value="Switzerland">Switzerland</option>
+                            <option value="Turkey">Turkey</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="United States">United States</option>
+                            <option value="Venezuela">Venezuela</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col1">
+                        <label for="phone">Phone(country code, area code,number):</label>
+                    </td>
+                    <td>
+                        (+<input type="text" id="phone" class="number1" />)
+                        <input type="text" class="number2" />
+                        <input type="text" class="number3" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col1">
+                        <label for="email">Email:</label>
+                    </td>
+                    <td>
+                        <input type="email" id="email" required="required" pattern="[^@]*@[^@].[^@]" class="input" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col1">
+                        <label for="birth">Birth day:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="birth" value="dd.mm.yyyy" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col1">
+                        <label for="gender">Gender:</label>
+                    </td>
+                    <td>
+                        <select name="gender">
+                            <option value="Male" selected="selected">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col1">
+                        <label for="start">Starting date:</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="start" value="Spring" />Spring 2015
+                        <input type="radio" value="Summer" />Summer 2015
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col1">
+                        <label for="com">Comments:</label>
+                    </td>
+                    <td>
+                        <textarea id="com" rows="6" cols="45"></textarea>
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+    </form>
+</body>
+</html>

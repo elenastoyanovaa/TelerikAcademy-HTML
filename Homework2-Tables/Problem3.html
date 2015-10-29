@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Calculator</title>
+    <style>
+        table {
+            width: 300px;
+            height: 300px;
+        }
+
+        table, tr, td {
+            text-align: center;
+            background-color: rgba(1, 100, 255, 0.60);
+            border: 3px outset blue;
+            border-radius: 7px;
+        }
+
+        input {
+            padding: 5px 20px 5px 20px;
+            background: none;
+            color: #000000;
+            border: 10px;
+            font-weight: bold;
+        }
+
+        #display {
+            text-align: right;
+            line-height: 40px;
+            font-size: 20px;
+        }
+
+        table thead {
+            background-color: lightyellow;
+        }
+    </style>
+</head>
+<body>
+    <form name="Calculator" class="calc">
+        <table>
+            <colgroup>
+                <col />
+            </colgroup>
+            <thead>
+                <tr>
+                    <td colspan="4">
+                        <input type="text" id="display" value="0" />
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="button" value="C" />
+                    </td>
+                    <td>
+                        <input type="button" value="." />
+                    </td>
+                    <td>
+                        <input type="button" value="%" />
+                    </td>
+                    <td>
+                        <input type="button" value="+" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="button" value="1" />
+                    </td>
+                    <td>
+                        <input type="button" value="2" />
+                    </td>
+                    <td>
+                        <input type="button" value="3" />
+                    </td>
+                    <td>
+                        <input type="button" value="-" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="button" value="4" />
+                    </td>
+                    <td>
+                        <input type="button" value="5" />
+                    </td>
+                    <td>
+                        <input type="button" value="6" />
+                    </td>
+                    <td>
+                        <input type="button" value="*" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="button" value="7" />
+                    </td>
+                    <td>
+                        <input type="button" value="8" />
+                    </td>
+                    <td>
+                        <input type="button" value="9" />
+                    </td>
+                    <td>
+                        <input type="button" value="/" />
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">
+                        <input type="button" value="0" />
+                    </td>
+                    <td>
+                        <input type="button" value="=" />
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+</body>
+</html>
